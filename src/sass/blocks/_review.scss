@@ -1,0 +1,53 @@
+.review {
+    padding: 93px 0 71px 0 ;
+    color: $black;
+
+    &__block{
+        display: flex;
+        align-items: flex-start;
+        margin: 70px 0 30px 0;
+    }
+
+    &__descr{
+        padding-left: 61px;
+    }
+
+    &__user-name{
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__count {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+
+    &__text{
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 19px;
+        line-height: 1.3em;
+        padding-right: 62px;
+    }
+
+}
+
+@media (max-width : 767px){
+    .review {
+        &__block{
+            align-items: center;
+            flex-direction: column;
+            margin: 40px 0 15px 0;
+        }
+        &__descr{
+            padding-left: 0px;
+        }
+        &__text {
+            padding-right: 0;
+            text-align: justify;
+        }
+    }
+
+}

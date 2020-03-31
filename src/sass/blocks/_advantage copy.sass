@@ -1,0 +1,44 @@
+.advantage
+	background-color: #f6f6f6
+	min-height: 470px
+	padding: 70px 7px 78px 7px
+	color: $black
+	&__blocks
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 65px
+		flex-wrap: wrap
+	&__block
+		width: 232px
+		display: flex
+		flex-direction: column
+		align-items: center
+		
+	&__subtitle
+		font-size: 18px
+		font-weight: 700
+		padding-top: 38px
+	&__descr
+		font-size: 14px
+		font-weight: 300
+		align-self: center
+		text-align: center
+		margin-top: 29px
+		a
+			color: #ff0000
+			text-decoration: underline
+
+@media ( max-width: 991px )
+	.advantage
+		padding: 8% 2%
+		&__blocks
+			justify-content: center
+			padding-top: 2%
+		&__block
+			margin: 4% 2%
+		&__subtitle
+			padding-top: 3%
+		&__descr
+			margin-top: 3%
+		

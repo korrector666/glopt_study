@@ -1,0 +1,43 @@
+.consult {
+	min-height: 680px;
+	background: url('../img/bg2.jpg') center (center/cover) no-repeat;
+	padding: 100px 0 92px 0;
+	color: $white;
+	&__subtitle{
+		font-size: 20px;
+		font-weight: 500;
+		margin-top: 80px;
+	}
+
+}
+@media ( max-width: 991px ){
+	.consult {
+		padding: 3% 0;
+		min-height: auto;
+
+		&__subtitle{
+			margin-top: 5%;
+			
+		}
+	
+	}
+}
+
+@media ( max-width: 767px ){
+	.consult {
+		&__subtitle{
+			font-size: 16px;
+			
+		}
+	
+	}
+}
+@media ( max-width: 575px ){
+	.consult {
+		&__subtitle{
+			font-size: 13px;
+			
+		}
+	
+	}
+}

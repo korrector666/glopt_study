@@ -1,0 +1,52 @@
+.modal
+	width: 380px
+	min-height: 0vh
+	background-color: #f2f2f2
+	padding: 40px
+	color: $black
+	text-align: center
+	line-height: 1em
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	&__close
+		color: $red
+		font-size: 42px
+		position: absolute
+		top: 0
+		right: -41px
+		line-height: 21px
+		cursor: pointer
+	&__title
+		font-size: 19px
+		font-weight: 700
+		margin: 0 -5px
+	&__subtitle
+		font-size: 14px
+		font-weight: 500
+		margin-top: 11px
+	&_small
+		min-height: 140px
+		
+#consult, #order, #thanks
+	display: none      
+
+@media ( max-width: 575px  )
+	.modal
+		min-height: 80vh
+		width: 320px
+		padding: 10px
+		&__close
+			top: 10px
+			right: 4px
+		&__title
+			font-size: 15px
+			font-weight: 700
+			margin: 0 -5px
+		&__subtitle
+			font-size: 12px
+			font-weight: 500
+			margin-top: 5px
+
+	

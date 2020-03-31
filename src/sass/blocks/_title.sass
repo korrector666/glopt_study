@@ -1,0 +1,26 @@
+.title
+    color: $black
+    font-size: 30px
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+    &_white
+        color: $white
+        text-align: left
+        font-size: 36px
+
+
+@media ( max-width: 991px )
+	.title
+        font-size: 22px
+        &_white
+            font-size: 28px
+@media ( max-width: 767px )
+    	.title
+            &_white
+                font-size: 22px
+@media ( max-width: 575px )
+    	.title
+            font-size: 19px
+            &_white
+                font-size: 17px

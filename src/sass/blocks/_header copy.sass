@@ -1,0 +1,66 @@
+.header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&__logo
+		width: 251px
+		height: 45px
+		img
+			width: 100%
+	&__official
+		color: $white
+		font-size: 12px
+		font-weight: 500
+		text-align: center
+		span
+			display: block
+			font-size: 18px
+			font-weight: 700
+	&__tel
+		color: $white
+		font-size: 18px
+		font-weight: 700
+		&:hover
+			text-decoration: none
+			color: $white
+	&__contacts
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-end
+
+
+
+@media ( max-width: 767px )
+	.header
+		&__tel
+			font-size: 15px
+		&__logo
+			width: 180px
+			height: auto
+		&__official
+			span
+				font-size: 16px
+		
+
+@media ( max-width: 575px )
+	.header
+		flex-wrap: wrap
+		&__official
+			display: none
+		&__logo
+			width: 190px
+
+@media ( max-width: 357px )
+	.header
+
+		&__logo
+			width: 50%
+		&__contacts
+			align-items: center
+		&__tel
+			font-size: 14px
+		
+			
+
+
