@@ -1,10 +1,48 @@
 .info	
 	color: $fff
+	display: flex
+	justify-content: space-between
+	align-items: baseline
+	margin-top: 10px
+
 	&__item
 		font-size: 16px
 		text-align: center
 		margin-top: 20px
-	img
+		&_mt15mb2
+			margin: 15px 0 2px
+			
+		&_mt20
+			margin-top: 20px
+		&_fc
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: flex-start
+
+	&__icon
 		display: block
 		margin: 0 auto
+		&_float
+			margin-right: 17px
+	&_blackText
+		color: $black
+	&__subtitle
+		color: $carrot
+		font-weight: bold
+		&_center
+			margin: 0 auto
+			text-align: center
+			font-size: 18px
+
+	&__textBlock
+		text-align: left
+		&_justify
+			text-align: justify
+		&_pr40
+			padding-right: 40px
+		&_pt28
+			padding-top: 28px
+
+	
 	
