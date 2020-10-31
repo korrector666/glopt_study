@@ -25,8 +25,23 @@
 		margin: 0 auto
 		&_float
 			margin-right: 17px
+		&_round
+			display: block
+			position: relative
+			&:before
+				content: ''
+				width: 103px
+				height: 103px
+				border: 1px solid $fff
+				position: absolute
+				border-radius: 103px
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
 	&_blackText
 		color: $black
+	&_whiteText
+		color: $white
 	&__subtitle
 		color: $carrot
 		font-weight: bold
@@ -34,11 +49,20 @@
 			margin: 0 auto
 			text-align: center
 			font-size: 18px
-
+	&__title
+		// margin: 0 auto
+		margin-top: 61px
+		text-align: center
+		font-size: 26px
+		
 	&__textBlock
 		text-align: left
 		&_justify
 			text-align: justify
+		&_center
+			text-align: center
+		&_fz19
+			font-size: 19px
 		&_pr40
 			padding-right: 40px
 		&_pt28
